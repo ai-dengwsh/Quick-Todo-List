@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快速待办事项列表</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <h1>📝 快速待办事项列表</h1>
+        <div class="todo-input">
+            <input type="text" id="todoInput" placeholder="请输入待办事项...">
+            <button id="addTodo">
+                <i class="fas fa-plus"></i> 添加
+            </button>
+        </div>
+        <div class="todo-list" id="todoList">
+            <!-- 待办事项将通过JavaScript动态添加 -->
+        </div>
+        <div class="todo-stats">
+            <span>总计: <span id="totalTasks">0</span></span>
+            <span>已完成: <span id="completedTasks">0</span></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
